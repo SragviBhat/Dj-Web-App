@@ -1,0 +1,40 @@
+<html>
+<head>
+
+<title>AI K-POP WEB APP</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+</head>
+<body background="djk.jpeg">
+<center>
+
+<div class="main">
+<h1>AI KPOP WEB APP</h1>
+<hr>
+<p>Note - Move your Left Wrist up to increase the volume and down to decrease the volume. Move your Right Wrist up to increase the speed and down to decrease the speed</p>
+<p>Note - Click "PLAY" to start the music. Click "STOP" to stop the music</p>
+</div>
+
+<div class="sv1">
+<img class="disk" src="giphy dj.gif">
+<h3 class="sv">SPEED : <span id="speed1"></span></h3> 
+</div>
+
+<button class="button" onclick="play()">PLAY</button>
+
+<div class="sv2">
+<img class="disk" src="giphy dj.gif">
+<h3 class="sv">VOLUME: <span id="volume1"></span></h3> 
+</div>
+
+<button class="button" onclick="stop()">STOP</button>
+
+</center>
+</body>
+</html>

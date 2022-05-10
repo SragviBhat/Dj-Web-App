@@ -1,0 +1,40 @@
+body{
+background-size: cover;
+}
+
+.main{
+background-color: white;
+border-radius: 20px;
+width: 100%;
+
+}
+
+.sv1{
+float: left;
+}
+
+.sv2{
+float: right;
+}
+
+.sv{
+background-color: white;
+width: 200px;
+border-radius: 10px;
+}
+
+.button{
+width: 100px;
+height: 50px;
+background-color:orange;
+}
+
+.disk{
+width: 200px;
+height: 200px;
+}
+
+canvas{
+border: 8px solid red ;
+border-radius: 10px;
+}
