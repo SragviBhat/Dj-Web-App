@@ -6,12 +6,10 @@ rightWristY = 0;
 scoreRightWrist = 0;
 scoreLeftWrist = 0;
 
-
-
 function preload(){
-song = loadSound("Butter.mp3");
-}
-
+  song = loadSound("Butter.mp3");
+  }
+  
 function setup(){
 canvas = createCanvas(500, 600);
 canvas.center();
@@ -31,6 +29,10 @@ image(video, 0, 0, 500, 600);
 
 fill("#f0000");
 stroke("#f0000");
+
+if(scoreRightWrist > 0.2){
+
+circle(rightWristX, rightWristY, 20);
 
 if(scoreRightWrist > 0 && scoreRightWrist<= 100)
 {
@@ -62,6 +64,16 @@ else if(scoreRightWrist > 400)
     song.rate(2.5);
 }
 }
+if(scoreLeftWrist > 0.2){
+circle(leftWristX, leftWristY, 20);
+
+inNumberY = Number(leftWristY);
+remove_decimal = floor(inNumberY);
+voLume = remove_decimal/500;
+document.getElementById("volume1").innerHTML = "Volume = " + voLume;
+song.setVolume(voLume);
+}
+}
 
 
 function play(){
@@ -90,3 +102,4 @@ if(results.length > 0){
   console.log("rightWristX = " + rightWristX + "rightWristY = " +rightWristY );
 }
 }
+
